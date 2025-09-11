@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canal Navigator - Screenshots</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Canal Navigator</a>
+
+            <!-- Hamburger -->
+            <button class="hamburger" id="hamburger">&#9776;</button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="web.html">Web Version</a></li>
+                <li><a href="screenshots.html" class="active-link">Screenshots</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>App Screenshots</h1>
+        <p>A closer look at Canal Navigator in action.</p>
+    </header>
+
+    <!-- Screenshot Gallery -->
+    <section class="gallery">
+        <h2>Preview the Experience</h2>
+        <div class="gallery-grid">
+            <img src="images/screenshot1.png" alt="App Screenshot 1">
+            <img src="images/screenshot2.png" alt="App Screenshot 2">
+            <img src="images/screenshot3.png" alt="App Screenshot 3">
+            <img src="images/screenshot4.png" alt="App Screenshot 4">
+            <img src="images/screenshot5.png" alt="App Screenshot 5">
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Canal Navigator. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+</body>
+
+</html>

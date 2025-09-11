@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canal Navigator App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Canal Navigator</a>
+
+            <!-- Hamburger for mobile -->
+            <button class="hamburger" id="hamburger">&#9776;</button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="web.html">Web Version</a></li>
+                <li><a href="screenshots.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Explore Florida's Canals with Ease</h1>
+        <p>Your personal navigation tool for Cape Coral and beyond.</p>
+
+        <div class="download-buttons">
+            <!-- Google Play -->
+            <a href="https://play.google.com/store/apps/details?id=com.steve.canalapp&pcampaignid=web_share"
+                target="_blank" class="download-now">
+                <img src="https://res.cloudinary.com/da0bnopjg/image/upload/v1757532324/GetItOnGooglePlay_Badge_Web_color_English_rq2eyf.png"
+                    alt="Get it on Google Play" class="store-badge">
+                <p>Download Now</p>
+            </a>
+
+            <!-- App Store (Coming Soon) -->
+            <div class="coming-soon">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                    alt="Download on the App Store" class="store-badge-2 disabled">
+                <p>Coming Soon</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Canal Navigator?</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>🚤 Smart Routes</h3>
+                <p>Plan the fastest or safest canal routes, tailored to your boat’s speed and clearance.</p>
+            </div>
+            <div class="feature">
+                <h3>🌊 Real-Time Data</h3>
+                <p>Check tides, bridge heights, and speed zones instantly while navigating.</p>
+            </div>
+            <div class="feature">
+                <h3>📍 Points of Interest</h3>
+                <p>Discover restaurants, marinas, and boat ramps directly on your map.</p>
+            </div>
+            <div class="feature">
+                <h3>📱 Multi-Platform</h3>
+                <p>Use it on Android now and stay tuned for iOS and full web support soon.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots">
+        <h2>App Preview</h2>
+        <div class="screenshot-grid">
+            <img src="images/screenshot1.png" alt="App Screenshot 1">
+            <img src="images/screenshot2.png" alt="App Screenshot 2">
+            <img src="images/screenshot3.png" alt="App Screenshot 3">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Canal Navigator. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle menu on mobile
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+</body>
+
+</html>

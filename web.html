@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canal Navigator - Web Version</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Canal Navigator</a>
+
+            <!-- Hamburger -->
+            <button class="hamburger" id="hamburger">&#9776;</button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="web.html" class="active-link">Web Version</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Canal Navigator Web</h1>
+        <p>Access our navigation tools directly in your browser – no download required.</p>
+    </header>
+
+    <!-- Web Preview Section -->
+    <section class="web-preview">
+        <h2>Try the Web Version</h2>
+        <p>Get a sneak peek of our online navigation system right here.</p>
+
+        <!-- Replace iframe src with your live map link -->
+        <div class="iframe-container">
+            <iframe src="https://stevenmihalik.github.io/interactive-map/iframe_ready_click_routing.html"
+                title="Canal Navigator Web" frameborder="0"></iframe>
+        </div>
+        <p class="note">* For the full experience, download our mobile app from Google Play.</p>
+    </section>
+
+    <!-- Web Features -->
+    <section class="features">
+        <h2>Why Use the Web Version?</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>💻 No Installation</h3>
+                <p>Access Canal Navigator instantly from any desktop or tablet browser.</p>
+            </div>
+            <div class="feature">
+                <h3>🔎 Interactive Maps</h3>
+                <p>Explore canals, bridges, and marinas with real-time updates.</p>
+            </div>
+            <div class="feature">
+                <h3>🌐 Universal Access</h3>
+                <p>Perfect for planning routes before you head out on the water.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Canal Navigator. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+</body>
+
+</html>
