@@ -17,6 +17,21 @@ body {
     align-items: center;
 }
 
+/* Container for logo text + image */
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* remove underline */
+}
+
+/* Image logo next to text */
+.app-logo {
+  height: 40px;           /* adjust to fit header height */
+  width: auto;            /* maintain aspect ratio */
+  margin-right: 0.6rem;   /* space between image and text */
+  vertical-align: middle; /* keeps alignment clean */
+}
+
 .logo {
     color: white;
     font-size: 1.5rem;
@@ -263,4 +278,5 @@ body {
     }
 
 }
+
 
