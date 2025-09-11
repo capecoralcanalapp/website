@@ -162,7 +162,7 @@ body {
 
 .screenshot-grid img {
     width: 100%;
-    border-radius: 16px;
+    border-radius: 56px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -232,7 +232,7 @@ body {
 
 .gallery-grid img {
     width: 100%;
-    border-radius: 12px;
+    border-radius: 56px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
 }
@@ -261,4 +261,5 @@ body {
     .hamburger {
         display: block;
     }
+
 }
